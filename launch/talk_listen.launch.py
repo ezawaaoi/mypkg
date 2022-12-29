@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2022 Ezawa Aoi
+# SPDX-FileCopyrightText: 2022 Aoi Ezawa
 # SPDX-License-Identifier: BSD-3-Clause
 
 import launch

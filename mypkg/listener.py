@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2022 Ezawa Aoi
+# SPDX-FileCopyrightText: 2022 Aoi Ezawa
 # SPDX-License-Identifier: BSD-3-Clause
 
 import rclpy
 from rclpy.node import Node
-from person_msgs.msg import Int16
+from std_msgs.msg import Int16
 
 def cb(msg):
     global node
