@@ -12,8 +12,3 @@ timeout 10 ros2 launch mypkg talk_listen.launch.py > /tmp/mypkg.log
 
 cat /tmp/mypkg.log |
 	grep 'Listen: 10'
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-P
