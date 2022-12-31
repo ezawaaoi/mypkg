@@ -1,27 +1,18 @@
 # mypkg
-千葉工業大学　未来ロボティクス学科　ロボットシステム学の講義で作成したリポジトリです。
-
 ![test](http://github.com/ezawaaoi/robosys2022/actions/workflows/test.yml/badge.svg)
 
 * このリポジトリはROS2のパッケージです。
-インストールされていない方はROS2のインストールが必要となります。
-
-* ワークスペースを作成し、移動してください。
-```
-$ mkdir -p ros2_ws/src
-$ cd ~/ros2_ws/src
-```
 * 下記のコマンドを入力してインストールしてください。
 ```
 $ git clone https://github.com/ezawaaoi/mypkg.git
 ```
 
 # talker・listener
-* talkerを実行するとcountupというトピックを通じて、Int16型のメッセージを送信することができます。
+* talkerを実行するとcountupというトピックを通じて、Int16型のメッセージを送信します。
 * listenerを実行するとtalkerから送信されたInt16型のメッセージを受信して出力します。
 
 ## 実行例
-端末を二つ用意してください
+端末を二つ用意してください。
 * 端末１に入力
 ```
 $ ros2 run mypkg talker
@@ -65,7 +56,7 @@ $ ros2 launch mypkg talk_listen.launch.py
 （以下省略）
 ```
 ## 動作確認済み環境
-* ubuntu22.04
+* Ubuntu22.04
 * ROS2 humble
 
 ## ライセンス
