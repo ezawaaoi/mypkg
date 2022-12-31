@@ -2,6 +2,11 @@
 ![test](http://github.com/ezawaaoi/robosys2022/actions/workflows/test.yml/badge.svg)
 
 * このリポジトリはROS2のパッケージです。
+* ワークスペースを作成し、移動してください。
+```
+$ mkdir -p ros2_ws/src
+$ cd ~/ros2_ws/src
+```
 * 下記のコマンドを入力してインストールしてください。
 ```
 $ git clone https://github.com/ezawaaoi/mypkg.git
