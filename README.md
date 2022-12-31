@@ -3,20 +3,18 @@
 
 ## 概要
 千葉工業大学　未来ロボティクス学科　ロボットシステム学の講義で作成したリポジトリです．
-
-## plusコマンド
-標準入力から読み込んだ数字を足して，標準出力をします．
-* インストール方法
+このリポジトリはROS2のパッケージです。
+ROS2がインストール済みの方はこちらを入力してください。
 ```
-$ git clone git@github.com:ezawaaoi/robosys2022.git
-$ cd robosys2022/
+$ git clone https://github.com/ezawaaoi/mypkg
 ```
 githubアカウントがない方はこちらのコマンドをご利用ください．
 ```
 $ git clone https://github.com/ezawaaoi/robosys2022
 $ cd robosys2022/
 ```
-* 使用例
+* talker
+* talkerはcountupというトピックを通じて、
 ```
 $ 
 ```
