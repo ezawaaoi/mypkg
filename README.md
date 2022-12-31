@@ -3,8 +3,10 @@
 
 ![test](http://github.com/ezawaaoi/robosys2022/actions/workflows/test.yml/badge.svg)
 
-* このリポジトリはROS2のパッケージです。インストールされていない方はROS2のインストールをしてください.
-* ワークスペースを作成し移動してください。
+* このリポジトリはROS2のパッケージです。
+インストールされていない方はROS2のインストールが必要となります。
+
+* ワークスペースを作成し、移動してください。
 ```
 $ mkdir -p ros2_ws/src
 $ cd ~/ros2_ws/src
@@ -15,11 +17,11 @@ $ git clone https://github.com/ezawaaoi/mypkg.git
 ```
 
 # talker・listener
-端末が二つ必要となります。
-talkerを使用するとcountupというトピックを通じて、Int16型のメッセージを送信することができます。
-listenerを使用するとtalkerから送信されたInt16型のメッセージを受信して出力します。
+* talkerを実行するとcountupというトピックを通じて、Int16型のメッセージを送信することができます。
+* listenerを実行するとtalkerから送信されたInt16型のメッセージを受信して出力します。
 
 ## 実行例
+端末を二つ用意してください
 * 端末１に入力
 ```
 $ ros2 run mypkg talker
@@ -41,6 +43,7 @@ $ ros2 run mypkg listener
 [INFO] [1672457726.399044900] [listener]: Listen: 8
 [INFO] [1672457726.899190300] [listener]: Listen: 9
 [INFO] [1672457727.399100400] [listener]: Listen: 10
+（以下省略）
 ```
 # launchファイル
 * launchファイルを使用することで、複数のノードを同時に立ち上げることができます。
@@ -59,14 +62,15 @@ $ ros2 launch mypkg talk_listen.launch.py
 [listener-2] [INFO] [1672458281.168444400] [listener]: Listen: 8
 [listener-2] [INFO] [1672458281.668373500] [listener]: Listen: 9
 [listener-2] [INFO] [1672458282.168435900] [listener]: Listen: 10
+（以下省略）
 ```
 ## 動作確認済み環境
 * ubuntu22.04
 * ROS2 humble
 
 ## ライセンス
-* このソフトウェアパッケージは, 3条項BSDライセンスの下，再頒布および使用が許可されます．
-* このパッケージのコードは，下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを，本人の許可を得て自身の著作としたものです．
+* このソフトウェアパッケージは、3条項BSDライセンスの下、再頒布および使用が許可されます。
+* このパッケージのコードは、下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを、本人の許可を得て自身の著作としたものです。
     * [ryuichiueda/my_slides robosys_2022](https://github.com/ryuichiueda/my_slides/tree/master/robosys_2022)
 
 © 2022 Aoi Ezawa
