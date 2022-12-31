@@ -6,17 +6,23 @@
 ```
 $ mkdir -p ros2_ws/src
 $ cd ~/ros2_ws/src
-```
+
 * 下記のコマンドを入力してインストールしてください。
-```
+
 $ git clone https://github.com/ezawaaoi/mypkg.git
 ```
+
 
 # talker・listener
 * talkerを実行するとcountupというトピックを通じて、Int16型のメッセージを送信します。
 * listenerを実行するとtalkerから送信されたInt16型のメッセージを受信して出力します。
 
 ## 実行例
+ros2_wsのディレクトリに移動する。
+```
+cd ~/ros2_ws
+```
+
 端末を二つ用意してください。
 * 端末１に入力
 ```
