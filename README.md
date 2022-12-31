@@ -21,7 +21,7 @@ $ ros2 run mypkg talker
 ```
 $ ros2 run mypkg listener
 ```
-* 端末１の出力結果
+* 端末２の出力結果
 ```
 [INFO] [1672457722.407598100] [listener]: Listen: 0
 [INFO] [1672457722.899632400] [listener]: Listen: 1
