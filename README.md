@@ -1,9 +1,24 @@
 # mypkg
+千葉工業大学　未来ロボティクス学科　ロボットシステム学の講義で作成したリポジトリです。
+
 ![test](http://github.com/ezawaaoi/robosys2022/actions/workflows/test.yml/badge.svg)
 
-このリポジトリはROS2のパッケージです。
+* このリポジトリはROS2のパッケージです。インストールされていない方はROS2のインストールをしてください.
+* ワークスペースを作成し移動してください。
+```
+$ mkdir -p ros2_ws/src
+$ cd ~/ros2_ws/src
+```
+* 下記のコマンドを入力してインストールしてください。
+```
+$ git clone https://github.com/ezawaaoi/mypkg.git
+```
 
 # talker・listener
+端末が二つ必要となります。
+talkerを使用するとcountupというトピックを通じて、Int16型のメッセージを送信することができます。
+listenerを使用するとtalkerから送信されたInt16型のメッセージを受信して出力します。
+
 ## 実行例
 * 端末１に入力
 ```
@@ -13,7 +28,7 @@ $ ros2 run mypkg talker
 ```
 $ ros2 run mypkg listener
 ```
-* 端末１で出力された結果
+* 端末１の出力結果
 ```
 [INFO] [1672457722.407598100] [listener]: Listen: 0
 [INFO] [1672457722.899632400] [listener]: Listen: 1
@@ -28,7 +43,7 @@ $ ros2 run mypkg listener
 [INFO] [1672457727.399100400] [listener]: Listen: 10
 ```
 # launchファイル
-
+* launchファイルを使用することで、複数のノードを同時に立ち上げることができます。
 ## 実行例
 ```
 $ ros2 launch mypkg talk_listen.launch.py
@@ -45,7 +60,9 @@ $ ros2 launch mypkg talk_listen.launch.py
 [listener-2] [INFO] [1672458281.668373500] [listener]: Listen: 9
 [listener-2] [INFO] [1672458282.168435900] [listener]: Listen: 10
 ```
-
+## 動作確認済み環境
+* ubuntu22.04
+* ROS2 humble
 
 ## ライセンス
 * このソフトウェアパッケージは, 3条項BSDライセンスの下，再頒布および使用が許可されます．
