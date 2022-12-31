@@ -18,7 +18,7 @@ $ git clone https://github.com/ezawaaoi/mypkg.git
 * listenerを実行するとtalkerから送信されたInt16型のメッセージを受信して出力します。
 
 ## 実行例
-ros2_wsのディレクトリに移動する。
+ros2_wsのディレクトリに移動してください。
 ```
 cd ~/ros2_ws
 ```
