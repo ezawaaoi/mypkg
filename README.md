@@ -2,9 +2,10 @@
 ![test](http://github.com/ezawaaoi/robosys2022/actions/workflows/test.yml/badge.svg)
 
 * このリポジトリはROS2のパッケージです。
-* ターミナルで以下のコマンドを実行する。
+* ターミナルで以下のコマンドを実行してください。
 ```
-$ ~/ros2_ws/src/
+$ mkdir -p ros2_ws/src
+$ cd ~/ros2_ws/src/
 $ git clone https://github.com/ezawaaoi/mypkg.git
 $ cd ~/ros2_ws/
 $ colcon build
