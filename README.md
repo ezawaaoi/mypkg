@@ -9,7 +9,6 @@ $ cd ~/ros2_ws/src/
 $ git clone https://github.com/ezawaaoi/mypkg.git
 $ cd ~/ros2_ws/
 $ colcon build
-
 ```
 # talker・listener
 * talkerを実行するとcountupというトピックを通じて、Int16型のメッセージを送信します。
