@@ -2,11 +2,14 @@
 ![test](http://github.com/ezawaaoi/robosys2022/actions/workflows/test.yml/badge.svg)
 
 * このリポジトリはROS2のパッケージです。
-* ワークスペースに下記のコマンドを入力してください。
+* ターミナルで以下のコマンドを実行する。
 ```
+$ ~/ros2_ws/src/
 $ git clone https://github.com/ezawaaoi/mypkg.git
-```
+$ cd ~/ros2_ws/
+$ colcon build
 
+```
 # talker・listener
 * talkerを実行するとcountupというトピックを通じて、Int16型のメッセージを送信します。
 * listenerを実行するとtalkerから送信されたInt16型のメッセージを受信して出力します。
